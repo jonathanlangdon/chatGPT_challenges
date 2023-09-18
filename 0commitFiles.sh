@@ -1,3 +1,5 @@
+# updated to user-inputed # of files to process... and removed sleep 5
+
 #!/bin/bash
 
 # Prompt the user for the number of files to be processed
@@ -38,4 +40,3 @@ if [ -n "$(ls -A ./0staging)" ]; then
 else
   echo "No files found in the 0staging directory"
 fi
-sleep 5
