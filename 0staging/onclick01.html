@@ -1,0 +1,39 @@
+<!-- add an onclick event to toggle visibility -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Paragraph Visibility</title>
+    <style>
+      .visible {
+        display: block;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="show-target">Toggle Paragraph</button>
+    <p id="target" class="visible">
+      This is the target paragraph. It is initially visible.
+    </p>
+
+    <script>
+      const buttonEvent = document.querySelector('#show-target')
+      const targetParagraphclasses = document.querySelector('#target').classList
+
+      buttonEvent.onclick = () => {
+        if (targetParagraphclasses.contains('hidden')) {
+          targetParagraphclasses.remove('hidden')
+          targetParagraphclasses.add('visible')
+        } else {
+          targetParagraphclasses.remove('visible')
+          targetParagraphclasses.add('hidden')
+        }
+      }
+    </script>
+  </body>
+</html>

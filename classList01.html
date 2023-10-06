@@ -1,0 +1,31 @@
+<!-- Toggle a class named "active" on an element with the ID "my-element" every time it's clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Paragraph Visibility</title>
+    <style>
+      .active {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button-toggle">Toggle Paragraph</button>
+    <p id="my-element">This is the target paragraph.</p>
+
+    <script>
+      const elementClasses = document.querySelector('#my-element').classList
+      const button = document.querySelector('#button-toggle')
+      button.addEventListener('click', () => {
+        if (elementClasses.contains('active')) {
+          elementClasses.remove('active')
+        } else {
+          elementClasses.add('active')
+        }
+      })
+    </script>
+  </body>
+</html>
