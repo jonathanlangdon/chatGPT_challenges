@@ -1,0 +1,12 @@
+Function MaxMagnitude(integer n1, integer n2) returns integer largestMagnitude
+   if AbsoluteValue(n1) > AbsoluteValue(n2)
+      largestMagnitude = n1
+   else
+      largestMagnitude = n2
+
+Function Main() returns nothing
+   integer n1
+   integer n2
+   n1 = Get next input
+   n2 = Get next input
+   Put MaxMagnitude(n1, n2) to output
