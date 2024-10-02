@@ -1,0 +1,9 @@
+// convert miles to number of laps
+
+Function MilesToLaps(float userMiles) returns float userLaps
+   userLaps = userMiles * 4
+   
+Function Main() returns nothing
+   float userMiles
+   userMiles = Get next input
+   Put MilesToLaps(userMiles) to output
