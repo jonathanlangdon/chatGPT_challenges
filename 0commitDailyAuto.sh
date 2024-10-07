@@ -18,7 +18,8 @@ else
 fi
 
 # Generate a random number either 1 or 5
-max_files=$(( ( RANDOM % 2 ) * 4 + 1 ))
+#max_files=$(( ( RANDOM % 2 ) * 4 + 1 ))
+max_files=5
 
 # Counter for the number of files processed
 count=0
