@@ -1,0 +1,17 @@
+//Write a program that reads a list of 10 integers, and outputs those integers in reverse
+
+integer array(10) userInts
+integer i
+integer array(10) newInts
+
+for i = 0; i < userInts.size; i = i + 1
+   userInts[i] = Get next input
+   
+
+for i = 0; i < userInts.size; i = i + 1
+   newInts[i] = userInts[9 - i]
+
+for i = 0; i < newInts.size; i = i + 1
+   Put newInts[i] to output
+   Put " " to output
+Put "\n" to output
