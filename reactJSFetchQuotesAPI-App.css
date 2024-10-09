@@ -1,0 +1,18 @@
+/* App.css for Quote fetching App */
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
